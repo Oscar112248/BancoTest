@@ -14,7 +14,6 @@ services:
 
 networks:
   bancotest_net:
-    driver: default
     ipam:
       config:
         - subnet: 192.168.250.0/24
