@@ -1,0 +1,58 @@
+Cliente 
+api/clientes
+{
+  "nombre": "string",
+  "genero": "M",
+  "edad": 130,
+  "identificacion": "string",
+  "direccion": "string",
+  "telefono": "string",
+  "codigoCliente": "string",
+  "contraseniaHash": "string"
+}
+
+
+api/clientes/ActualizaCliente/{idCliente}
+
+{
+  "telefono": "string",
+  "direccion": "string",
+  "edad": 0
+}
+
+
+Cuentas
+/api/cuentas/CrearCuenta
+{
+  "clienteIdPersona": 0,
+  "numeroCuenta": "string",
+  "tipoCuenta": "string",
+  "saldoInicial": 0
+}
+
+/api/cuentas/ActualizaCuenta/{numeroCuenta}
+
+
+{
+  "tipoCuenta": "string",
+  "estado": true,
+  "eliminaCuenta": true,
+  "clienteIdPersona": 0
+}
+
+
+
+Movimientos
+/api/movimientos/retiros
+{
+  "numeroCuenta": "string",
+  "valor": 0.01,
+  "fecha": "2025-08-31T04:07:28.481Z"
+}
+
+/api/movimientos/depositos
+{
+  "numeroCuenta": "string",
+  "valor": 0.01,
+  "fecha": "2025-08-31T04:07:28.481Z"
+}
