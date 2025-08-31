@@ -1,0 +1,238 @@
+[
+  {
+    "ContainingType": "BancoTest.Controllers.ClienteController",
+    "Method": "CrearAsync",
+    "RelativePath": "api/clientes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "Shared.DTO.CrearClienteDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BancoTest.Controllers.ClienteController",
+    "Method": "PutCliente",
+    "RelativePath": "api/clientes/ActualizaCliente/{idCliente}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCliente",
+        "Type": "System.Int64",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Shared.DTO.ActualizaClienteDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BancoTest.Controllers.ClienteController",
+    "Method": "ConsultaCuenta",
+    "RelativePath": "api/clientes/ConsultaCliente/{clienteId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clienteId",
+        "Type": "System.Int64",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BancoTest.Controllers.ClienteController",
+    "Method": "ConsultaClientes",
+    "RelativePath": "api/clientes/ConsultaClientes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BancoTest.Controllers.ClienteController",
+    "Method": "EliminarCliente",
+    "RelativePath": "api/clientes/EliminarCliente/{idCliente}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCliente",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Shared.DTO.ActualizarEstadoCuentaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BancoTest.Controllers.CuentaController",
+    "Method": "PutCuenta",
+    "RelativePath": "api/cuentas/ActualizaCuenta/{numeroCuenta}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numeroCuenta",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Shared.DTO.ActualizarCuentaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BancoTest.Controllers.CuentaController",
+    "Method": "PatchEstado",
+    "RelativePath": "api/cuentas/ActualizaEstadoCuenta/{numero}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numero",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "Shared.DTO.ActualizarEstadoCuentaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BancoTest.Controllers.CuentaController",
+    "Method": "ConsultaCuenta",
+    "RelativePath": "api/cuentas/ConsultaCuenta/{numeroCuenta}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numeroCuenta",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BancoTest.Controllers.CuentaController",
+    "Method": "ConsultaCuentas",
+    "RelativePath": "api/cuentas/ConsultaCuentas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BancoTest.Controllers.CuentaController",
+    "Method": "CrearCuenta",
+    "RelativePath": "api/cuentas/CrearCuenta",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cuentaDto",
+        "Type": "Shared.DTO.CrearCuentaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BancoTest.Controllers.MovimientosController",
+    "Method": "ConsultaMovimientos",
+    "RelativePath": "api/movimientos/ConsultaMovimientos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BancoTest.Controllers.MovimientosController",
+    "Method": "Depositar",
+    "RelativePath": "api/movimientos/depositos",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "Shared.DTO.DepositoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BancoTest.Controllers.MovimientosController",
+    "Method": "Retirar",
+    "RelativePath": "api/movimientos/retiros",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "Shared.DTO.RetiroDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BancoTest.Controllers.ReportesController",
+    "Method": "EstadoCuenta",
+    "RelativePath": "api/reportes/EstadoCuenta",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cliente",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "desde",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      },
+      {
+        "Name": "hasta",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

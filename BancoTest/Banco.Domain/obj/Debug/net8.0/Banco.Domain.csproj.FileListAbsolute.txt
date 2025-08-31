@@ -1,0 +1,15 @@
+C:\Users\omaldonado\Documents\PRUEBA BANCO\BancoTest\Banco.Domain\bin\Debug\net8.0\Banco.Domain.deps.json
+C:\Users\omaldonado\Documents\PRUEBA BANCO\BancoTest\Banco.Domain\bin\Debug\net8.0\Banco.Domain.dll
+C:\Users\omaldonado\Documents\PRUEBA BANCO\BancoTest\Banco.Domain\bin\Debug\net8.0\Banco.Domain.pdb
+C:\Users\omaldonado\Documents\PRUEBA BANCO\BancoTest\Banco.Domain\bin\Debug\net8.0\Shared.dll
+C:\Users\omaldonado\Documents\PRUEBA BANCO\BancoTest\Banco.Domain\bin\Debug\net8.0\Shared.pdb
+C:\Users\omaldonado\Documents\PRUEBA BANCO\BancoTest\Banco.Domain\obj\Debug\net8.0\Banco.Domain.csproj.AssemblyReference.cache
+C:\Users\omaldonado\Documents\PRUEBA BANCO\BancoTest\Banco.Domain\obj\Debug\net8.0\Banco.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\omaldonado\Documents\PRUEBA BANCO\BancoTest\Banco.Domain\obj\Debug\net8.0\Banco.Domain.AssemblyInfoInputs.cache
+C:\Users\omaldonado\Documents\PRUEBA BANCO\BancoTest\Banco.Domain\obj\Debug\net8.0\Banco.Domain.AssemblyInfo.cs
+C:\Users\omaldonado\Documents\PRUEBA BANCO\BancoTest\Banco.Domain\obj\Debug\net8.0\Banco.Domain.csproj.CoreCompileInputs.cache
+C:\Users\omaldonado\Documents\PRUEBA BANCO\BancoTest\Banco.Domain\obj\Debug\net8.0\Banco.Do.7504EE88.Up2Date
+C:\Users\omaldonado\Documents\PRUEBA BANCO\BancoTest\Banco.Domain\obj\Debug\net8.0\Banco.Domain.dll
+C:\Users\omaldonado\Documents\PRUEBA BANCO\BancoTest\Banco.Domain\obj\Debug\net8.0\refint\Banco.Domain.dll
+C:\Users\omaldonado\Documents\PRUEBA BANCO\BancoTest\Banco.Domain\obj\Debug\net8.0\Banco.Domain.pdb
+C:\Users\omaldonado\Documents\PRUEBA BANCO\BancoTest\Banco.Domain\obj\Debug\net8.0\ref\Banco.Domain.dll

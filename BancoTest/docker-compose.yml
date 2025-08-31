@@ -1,0 +1,9 @@
+services:
+  bancotest:
+    image: ${DOCKER_REGISTRY-}bancotest
+    build:
+      context: .
+      dockerfile: BancoTest/Dockerfile
+    restart: always
+    ports:
+      - "4753:8080"
