@@ -1,0 +1,11 @@
+<div class="shell" [class.collapsed]="collapsed">
+  <app-sidebar (toggle)="collapsed = !collapsed"></app-sidebar>
+  <main class="content">
+    <app-header></app-header>
+    <section class="page">
+      <router-outlet></router-outlet>
+          <app-toast-container></app-toast-container> <!-- aquí vive el contenedor global -->
+
+    </section>
+  </main>
+</div>

@@ -1,0 +1,161 @@
+<!-- src/app/features/clientes/clientes-list/clientes-list.component.html -->
+<h3>Clientes</h3>
+
+<div class="toolbar">
+  <button type="button" (click)="nuevo()">Nuevo</button>
+</div>
+
+<div *ngIf="loading">Cargando…</div>
+
+<table *ngIf="!loading" class="tbl">
+  <thead>
+    <tr>
+      <th>Código</th>
+      <th>Identificación</th>
+      <th>Nombre</th>
+      <th>Género</th>
+      <th>Edad</th>
+      <th>Teléfono</th>
+      <th>Dirección</th>
+      <th>Estado</th>
+      <th style="width:160px">Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let c of items">
+      <td>{{ c.codigoCliente }}</td>
+      <td>{{ c.identificacion }}</td>
+      <td>{{ c.nombre }}</td>
+      <td>{{ c.genero }}</td>
+      <td>{{ c.edad }}</td>
+      <td>{{ c.telefono }}</td>
+      <td>{{ c.direccion }}</td>
+      <td>{{ c.estado ? 'Inactivo' : 'Activo' }}</td>
+      <td class="actions">
+        <button type="button" (click)="editar(c)">Actualizar</button>
+        <button type="button" (click)="eliminar(c)">Eliminar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ===== Modal EDITAR ===== -->
+<div class="modal-backdrop" *ngIf="modalOpen && modalMode==='edit'">
+  <div class="modal">
+    <h4>Editar cliente</h4>
+
+    <form [formGroup]="form" (ngSubmit)="guardarEdicion()">
+      <div class="grid">
+        <label>Código
+          <input type="text" formControlName="codigoCliente" >
+        </label>
+
+        <label>Identificación
+          <input type="text" formControlName="identificacion" >
+        </label>
+
+        <label>Nombre
+          <input type="text" formControlName="nombre">
+          <small class="err" *ngIf="form.controls['nombre'].touched && form.controls['nombre'].invalid">
+            Requerido (mín. 2)
+          </small>
+        </label>
+
+        <label>Género
+          <select formControlName="genero">
+            <option value="M">M</option>
+            <option value="F">F</option>
+          </select>
+        </label>
+
+        <label>Edad
+          <input type="number" formControlName="edad" min="0">
+        </label>
+
+        <label>Teléfono
+          <input type="text" formControlName="telefono">
+        </label>
+
+        <label>Dirección
+          <input type="text" formControlName="direccion">
+        </label>
+
+        <!-- <label class="check">
+          <input type="checkbox" formControlName="estado"> Activo
+        </label> -->
+      </div>
+
+      <div class="modal-actions">
+        <button type="button" (click)="cerrarModal()">Cancelar</button>
+        <button type="submit">Guardar</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- ===== Modal ELIMINAR ===== -->
+<div class="modal-backdrop" *ngIf="modalOpen && modalMode==='delete'">
+  <div class="modal">
+    <h4>Confirmar eliminación</h4>
+    <p>¿Seguro que deseas eliminar al cliente <strong>{{ current?.nombre }}</strong>
+       ({{ current?.identificacion }})?</p>
+
+    <div class="modal-actions">
+      <button type="button" (click)="cerrarModal()">Cancelar</button>
+      <button type="button" class="danger" (click)="confirmarEliminar()">Eliminar</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- ===== Modal CREAR ===== -->
+<div class="modal-backdrop" *ngIf="modalOpen && modalMode==='create'">
+  <div class="modal">
+    <h4>Nuevo cliente</h4>
+
+    <form [formGroup]="form" (ngSubmit)="guardarNuevo()">
+      <div class="grid">
+        <label>Código Cliente
+    <input type="text" formControlName="codigoCliente">
+  </label>
+
+  <label>Contraseña
+    <input type="password" formControlName="contraseniaHash">
+  </label>
+
+  <label>Nombre
+    <input type="text" formControlName="nombre">
+  </label>
+
+  <label>Género
+    <select formControlName="genero">
+      <option value="M">M</option>
+      <option value="F">F</option>
+      <option value="O">Otro</option>
+    </select>
+  </label>
+
+  <label>Edad
+    <input type="number" formControlName="edad">
+  </label>
+
+  <label>Identificación
+    <input type="text" formControlName="identificacion">
+  </label>
+
+  <label>Dirección
+    <input type="text" formControlName="direccion">
+  </label>
+
+  <label>Teléfono
+    <input type="text" formControlName="telefono">
+  </label>
+
+  <div class="modal-actions">
+    <button type="button" (click)="cerrarModal()">Cancelar</button>
+    <button type="submit">Guardar</button>
+  </div>
+  </div>
+    </form>
+  </div>
+</div>

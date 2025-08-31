@@ -1,0 +1,30 @@
+<div class="card">
+  <h3>{{ model.id ? 'Editar cliente' : 'Nuevo cliente' }}</h3>
+
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <label>Cédula
+      <input formControlName="cedula">
+    </label>
+
+    <label>Nombres
+      <input formControlName="nombres">
+    </label>
+
+    <label>Apellidos
+      <input formControlName="apellidos">
+    </label>
+
+    <label>Email
+      <input formControlName="email" type="email">
+    </label>
+
+    <label>
+      <input type="checkbox" formControlName="activo"> Activo
+    </label>
+
+    <div class="actions">
+      <button type="button" (click)="cancel.emit()">Cancelar</button>
+      <button type="submit">Guardar</button>
+    </div>
+  </form>
+</div>

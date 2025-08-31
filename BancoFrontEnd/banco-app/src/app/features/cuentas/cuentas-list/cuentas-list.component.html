@@ -1,0 +1,110 @@
+<h3>Cuentas</h3>
+
+<div class="toolbar">
+  <button type="button" (click)="nuevo()">Nuevo</button>
+</div>
+
+<div *ngIf="loading">Cargando…</div>
+
+<table *ngIf="!loading" class="tbl">
+  <thead>
+    <tr>
+      <th>Cuenta Id</th>
+      <th>Persona Id</th>
+      <th>Número Cuenta</th>
+      <th>Tipo Cuenta</th>
+      <th>Saldo Inicial</th>
+      <th>Estado</th>
+      <th style="width:160px">Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let c of items; trackBy: trackById">
+      <td>{{ c.cuentaId }}</td>
+      <td>{{ c.clienteIdPersona }}</td>
+      <td>{{ c.numeroCuenta }}</td>
+      <td>{{ c.tipoCuenta }}</td>
+      <td>{{ c.saldoInicial | number:'1.2-2' }}</td>
+      <td>{{ !c.estado ? 'Activo' : 'Inactivo' }}</td>
+      <td class="actions">
+        <button type="button" (click)="editar(c)">Actualizar</button>
+        <button type="button" (click)="eliminar(c)">Eliminar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Modal Crear / Editar -->
+<div class="modal-backdrop" *ngIf="modalOpen && (modalMode==='create' || modalMode==='edit')">
+  <div class="modal">
+    <h4>{{ modalMode === 'create' ? 'Nueva cuenta' : 'Editar cuenta' }}</h4>
+
+    <form [formGroup]="form" (ngSubmit)="modalMode==='create' ? guardarNuevo() : guardarEdicion()">
+
+      <div class="grid">
+        <label>
+          Persona Id
+          <input type="number" formControlName="clienteIdPersona">
+        </label>
+        <div class="error" *ngIf="form.get('clienteIdPersona')?.touched && form.get('clienteIdPersona')?.invalid">
+          Requerido
+        </div>
+
+        <label>
+          Número de Cuenta
+          <input type="text" formControlName="numeroCuenta">
+        </label>
+        <div class="error" *ngIf="form.get('numeroCuenta')?.touched && form.get('numeroCuenta')?.invalid">
+          Requerido (mín. 5 caracteres)
+        </div>
+
+        <label>
+          Tipo de Cuenta
+          <select formControlName="tipoCuenta">
+  <option [ngValue]="1">Ahorro</option>
+  <option [ngValue]="2">Corriente</option>
+</select>
+        </label>
+
+        <label>
+          Saldo Inicial
+          <input type="number" step="0.01" formControlName="saldoInicial">
+        </label>
+        <div class="error" *ngIf="form.get('saldoInicial')?.touched && form.get('saldoInicial')?.invalid">
+          Debe ser ≥ 0
+        </div>
+
+        <label class="row">
+          <input type="checkbox" formControlName="estado">
+          <span>Activo</span>
+        </label>
+
+        <label>
+          Fecha de Apertura
+          <input type="datetime-local" formControlName="fechaApertura">
+        </label>
+        <div class="error" *ngIf="form.get('fechaApertura')?.touched && form.get('fechaApertura')?.invalid">
+          Requerido
+        </div>
+      </div>
+
+      <div class="modal-actions">
+        <button type="button" (click)="cerrarModal()">Cancelar</button>
+        <button type="submit" [disabled]="form.invalid">
+          {{ modalMode === 'create' ? 'Guardar' : 'Actualizar' }}
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Modal Eliminar -->
+<div class="modal-backdrop" *ngIf="modalOpen && modalMode==='delete'">
+  <div class="modal">
+    <h4>Eliminar cuenta</h4>
+    <p>¿Seguro que deseas eliminar la cuenta <strong>{{ current?.numeroCuenta }}</strong>?</p>
+    <div class="modal-actions">
+      <button type="button" (click)="cerrarModal()">Cancelar</button>
+    </div>
+  </div>
+</div>

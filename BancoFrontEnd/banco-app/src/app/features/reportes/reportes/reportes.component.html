@@ -1,0 +1,25 @@
+<div class="card">
+  <h2>Estado de Cuenta por Usuario</h2>
+
+  <form (ngSubmit)="generar()" #f="ngForm" class="form">
+    <div class="row">
+      <label for="cliente">Usuario (cliente)</label>
+      <input id="cliente" type="text" name="cliente" [(ngModel)]="cliente" required />
+    </div>
+
+    <div class="row">
+      <label for="desde">Desde</label>
+      <input id="desde" type="date" name="desde" [(ngModel)]="desde" required />
+    </div>
+
+    <div class="row">
+      <label for="hasta">Hasta</label>
+      <input id="hasta" type="date" name="hasta" [(ngModel)]="hasta" required />
+    </div>
+
+    <button type="submit" [disabled]="cargando || !f.valid">Generar PDF</button>
+  </form>
+
+  <div *ngIf="cargando" class="loading">Generando PDF…</div>
+  <p *ngIf="error" class="error">{{ error }}</p>
+</div>

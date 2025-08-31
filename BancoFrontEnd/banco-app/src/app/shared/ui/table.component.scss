@@ -1,0 +1,11 @@
+.tbl{background:#fff;border:1px solid var(--border); border-radius:8px; overflow:hidden}
+.tbl-head{padding:10px 12px; border-bottom:1px solid var(--border); background:#fcfcfc;}
+.tbl-body{max-height:60vh; overflow:auto}
+table{width:100%; border-collapse:collapse}
+th,td{padding:10px 12px; border-bottom:1px solid #f1f1f1; text-align:left; font-size:14px}
+tr:hover{background:#fafafa}
+.actions{display:flex; gap:8px}
+.btn{border:1px solid var(--border); background:#fff; border-radius:6px; padding:6px 10px; cursor:pointer}
+.btn.primary{border-color:var(--primary); color:#fff; background:var(--primary)}
+.btn.danger{border-color:#ef4444; color:#fff; background:#ef4444}
+.input{border:1px solid var(--border); padding:8px 10px; border-radius:6px}

@@ -1,0 +1,16 @@
+.card { max-width:520px; margin:40px auto; padding:20px; background:#fff;
+        border:1px solid #e5e7eb; border-radius:12px; }
+h2 { margin:0 0 14px; font-size:20px; }
+.form { display:grid; gap:12px; }
+.row { display:grid; gap:6px; }
+label { font-size:14px; color:#334155; }
+input[type="text"], input[type="date"] {
+  padding:8px 10px; border:1px solid #cbd5e1; border-radius:8px; outline:none;
+}
+input:focus { border-color:#0ea5e9; }
+button {
+  padding:10px 14px; border:0; border-radius:8px; background:#0ea5e9; color:#fff; cursor:pointer;
+}
+button[disabled]{ opacity:.6; cursor:not-allowed; }
+.loading{ margin-top:10px; font-size:14px; color:#334155; }
+.error{ margin-top:10px; color:#b91c1c; }

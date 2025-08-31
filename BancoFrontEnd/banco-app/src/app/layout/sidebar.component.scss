@@ -1,0 +1,5 @@
+.sidebar{border-right:1px solid var(--border); height:100vh; padding:12px; position:sticky; top:0;}
+.toggle{width:100%; margin-bottom:12px}
+nav{display:flex; flex-direction:column; gap:6px}
+a{padding:10px 12px; border-radius:6px; color:var(--text)}
+a.active, a:hover{background:#fff; border:1px solid var(--border)}
