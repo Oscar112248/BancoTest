@@ -9,3 +9,13 @@ services:
     restart: always
     ports:
       - "4753:8080"
+    networks:
+      - bancotest_net
+
+networks:
+  bancotest_net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.29.10.0/24
+          gateway: 172.29.10.1
