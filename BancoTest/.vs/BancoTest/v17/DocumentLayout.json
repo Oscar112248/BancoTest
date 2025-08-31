@@ -3,14 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\omaldonado\\Documents\\PRUEBA BANCO\\GITHUB\\BancoTest\\BancoTest\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|c:\\users\\omaldonado\\documents\\prueba banco\\github\\bancotest\\bancotest\\docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{81DDED9D-158B-E303-5F62-77A2896D2A5A}|docker-compose.dcproj|solutionrelative:docker-compose.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6A37939-5DBB-42C6-B0AE-2DF629480EB8}|BancoTest\\BancoTest.csproj|c:\\users\\omaldonado\\documents\\prueba banco\\github\\bancotest\\bancotest\\bancotest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6A37939-5DBB-42C6-B0AE-2DF629480EB8}|BancoTest\\BancoTest.csproj|solutionrelative:bancotest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E6A37939-5DBB-42C6-B0AE-2DF629480EB8}|BancoTest\\BancoTest.csproj|c:\\users\\omaldonado\\documents\\prueba banco\\github\\bancotest\\bancotest\\bancotest\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{E6A37939-5DBB-42C6-B0AE-2DF629480EB8}|BancoTest\\BancoTest.csproj|solutionrelative:bancotest\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
@@ -22,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,33 +30,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\omaldonado\\Documents\\PRUEBA BANCO\\GITHUB\\BancoTest\\BancoTest\\BancoTest\\Program.cs",
-              "RelativeDocumentMoniker": "BancoTest\\Program.cs",
-              "ToolTip": "C:\\Users\\omaldonado\\Documents\\PRUEBA BANCO\\GITHUB\\BancoTest\\BancoTest\\BancoTest\\Program.cs",
-              "RelativeToolTip": "BancoTest\\Program.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAYwF4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-31T02:56:11.683Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "docker-compose.yml",
-              "DocumentMoniker": "C:\\Users\\omaldonado\\Documents\\PRUEBA BANCO\\GITHUB\\BancoTest\\BancoTest\\docker-compose.yml",
-              "RelativeDocumentMoniker": "docker-compose.yml",
-              "ToolTip": "C:\\Users\\omaldonado\\Documents\\PRUEBA BANCO\\GITHUB\\BancoTest\\BancoTest\\docker-compose.yml",
-              "RelativeToolTip": "docker-compose.yml",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAYwAoAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2025-08-31T02:33:38.055Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\omaldonado\\Documents\\PRUEBA BANCO\\GITHUB\\BancoTest\\BancoTest\\BancoTest\\Dockerfile",
               "RelativeDocumentMoniker": "BancoTest\\Dockerfile",
@@ -72,7 +38,8 @@
               "RelativeToolTip": "BancoTest\\Dockerfile",
               "ViewState": "AgIAABYAAAAAAAAAAAAIwCUAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-08-31T02:23:28.136Z"
+              "WhenOpened": "2025-08-31T02:23:28.136Z",
+              "EditorCaption": ""
             }
           ]
         }
