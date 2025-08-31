@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "E8et8XeBNi8=",
+  "dgSpecHash": "R6+pm8Y1ri4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\omaldonado\\Documents\\PRUEBA BANCO\\BancoTest\\Shared\\Shared.csproj",
+  "projectFilePath": "C:\\Users\\omaldonado\\Documents\\PRUEBA BANCO\\GITHUB\\BancoTest\\BancoTest\\Shared\\Shared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\omaldonado\\.nuget\\packages\\microsoft.aspnetcore.http\\2.3.0\\microsoft.aspnetcore.http.2.3.0.nupkg.sha512",
     "C:\\Users\\omaldonado\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.3.0\\microsoft.aspnetcore.http.abstractions.2.3.0.nupkg.sha512",

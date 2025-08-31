@@ -14,8 +14,8 @@ services:
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
       - NUGET_FALLBACK_PACKAGES=/.nuget/fallbackpackages
     volumes:
-      - C:\Users\omaldonado\Documents\PRUEBA BANCO\BancoTest\BancoTest:/app:rw
-      - C:\Users\omaldonado\Documents\PRUEBA BANCO\BancoTest:/src:rw
+      - C:\Users\omaldonado\Documents\PRUEBA BANCO\GITHUB\BancoTest\BancoTest\BancoTest:/app:rw
+      - C:\Users\omaldonado\Documents\PRUEBA BANCO\GITHUB\BancoTest\BancoTest:/src:rw
       - C:\Users\omaldonado\vsdbg\vs2017u5:/remote_debugger:rw
       - C:\Users\omaldonado\.nuget\packages:/.nuget/packages:ro
       - C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages:/.nuget/fallbackpackages:ro

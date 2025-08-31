@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FKrkKltDjkE=",
+  "dgSpecHash": "qc4Rz5Ui2sI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\omaldonado\\Documents\\PRUEBA BANCO\\BancoTest\\BancoTest\\BancoTest.csproj",
+  "projectFilePath": "C:\\Users\\omaldonado\\Documents\\PRUEBA BANCO\\GITHUB\\BancoTest\\BancoTest\\BancoTest\\BancoTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\omaldonado\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\omaldonado\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

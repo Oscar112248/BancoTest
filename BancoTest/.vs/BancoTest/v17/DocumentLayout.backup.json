@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\omaldonado\\Documents\\PRUEBA BANCO\\BancoTest\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{E6A37939-5DBB-42C6-B0AE-2DF629480EB8}|BancoTest\\BancoTest.csproj|c:\\users\\omaldonado\\documents\\prueba banco\\bancotest\\bancotest\\bancotest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{E6A37939-5DBB-42C6-B0AE-2DF629480EB8}|BancoTest\\BancoTest.csproj|solutionrelative:bancotest\\bancotest.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E6A37939-5DBB-42C6-B0AE-2DF629480EB8}|BancoTest\\BancoTest.csproj|c:\\users\\omaldonado\\documents\\prueba banco\\bancotest\\bancotest\\controllers\\reportescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E6A37939-5DBB-42C6-B0AE-2DF629480EB8}|BancoTest\\BancoTest.csproj|solutionrelative:bancotest\\controllers\\reportescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,21 +9,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": -1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BancoTest",
-              "DocumentMoniker": "C:\\Users\\omaldonado\\Documents\\PRUEBA BANCO\\BancoTest\\BancoTest\\BancoTest.csproj",
-              "RelativeDocumentMoniker": "BancoTest\\BancoTest.csproj",
-              "ToolTip": "C:\\Users\\omaldonado\\Documents\\PRUEBA BANCO\\BancoTest\\BancoTest\\BancoTest.csproj",
-              "RelativeToolTip": "BancoTest\\BancoTest.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-08-31T02:00:13.843Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
@@ -44,19 +22,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ReportesController.cs",
-              "DocumentMoniker": "C:\\Users\\omaldonado\\Documents\\PRUEBA BANCO\\BancoTest\\BancoTest\\Controllers\\ReportesController.cs",
-              "RelativeDocumentMoniker": "BancoTest\\Controllers\\ReportesController.cs",
-              "ToolTip": "C:\\Users\\omaldonado\\Documents\\PRUEBA BANCO\\BancoTest\\BancoTest\\Controllers\\ReportesController.cs",
-              "RelativeToolTip": "BancoTest\\Controllers\\ReportesController.cs",
-              "ViewState": "AgIAACwAAAAAAAAAAAAgwDQAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-31T01:58:30.525Z",
-              "EditorCaption": ""
             }
           ]
         }

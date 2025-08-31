@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\omaldonado\\Documents\\PRUEBA BANCO\\BancoTest\\Shared\\Shared.csproj": {}
+    "C:\\Users\\omaldonado\\Documents\\PRUEBA BANCO\\GITHUB\\BancoTest\\BancoTest\\Shared\\Shared.csproj": {}
   },
   "projects": {
-    "C:\\Users\\omaldonado\\Documents\\PRUEBA BANCO\\BancoTest\\Shared\\Shared.csproj": {
+    "C:\\Users\\omaldonado\\Documents\\PRUEBA BANCO\\GITHUB\\BancoTest\\BancoTest\\Shared\\Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\omaldonado\\Documents\\PRUEBA BANCO\\BancoTest\\Shared\\Shared.csproj",
+        "projectUniqueName": "C:\\Users\\omaldonado\\Documents\\PRUEBA BANCO\\GITHUB\\BancoTest\\BancoTest\\Shared\\Shared.csproj",
         "projectName": "Shared",
-        "projectPath": "C:\\Users\\omaldonado\\Documents\\PRUEBA BANCO\\BancoTest\\Shared\\Shared.csproj",
+        "projectPath": "C:\\Users\\omaldonado\\Documents\\PRUEBA BANCO\\GITHUB\\BancoTest\\BancoTest\\Shared\\Shared.csproj",
         "packagesPath": "C:\\Users\\omaldonado\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\omaldonado\\Documents\\PRUEBA BANCO\\BancoTest\\Shared\\obj\\",
+        "outputPath": "C:\\Users\\omaldonado\\Documents\\PRUEBA BANCO\\GITHUB\\BancoTest\\BancoTest\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
